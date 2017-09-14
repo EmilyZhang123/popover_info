@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+    if(!localStorage.getItem("has")){
+        alert("diyic")
+    }
+//    console.log("")
+    localStorage.setItem("has","dddd");
+
+
+
+
+    var storage = window.localStorage;
+    if (!storage.getItem("pageLoadCount")) storage.setItem("pageLoadCount",0);
+    storage.pageLoadCount = parseInt(storage.getItem("pageLoadCount")) + 1;//必须格式转换
+    document.getElementByIdx_x("count").innerHTML = storage.pageLoadCount;
+    showStorage();
+</script>
+</html>
